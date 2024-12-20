@@ -9,7 +9,7 @@ load_dotenv()
 app = Flask(__name__)
 app.secret_key = secrets.token_hex(16)
 
-client_id = os.getenv(CLIENT_ID)
+client_id = os.getenv('CLIENT_ID')
 redirect_uri = "http://127.0.0.0:5555/callback"
 scope = "user-read-currently-playing"
 
